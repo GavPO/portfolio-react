@@ -1,5 +1,5 @@
 import React from 'react';
-import Face from '../face.png'
+import Face from '../images/face.png'
 import '../home.css'
 
 export default function Home() {

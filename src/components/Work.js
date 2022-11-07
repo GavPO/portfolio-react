@@ -1,20 +1,63 @@
-import React from 'react';
+import React from "react";
+import teamCliScreenshot from '../images/team-cli-screenshot.png'
+import artistInfoScreenshot from '../images/artist-info-screenshot.png';
+
+const styles = {
+  card: {
+    width: "18rem",
+  },
+};
 export default function Work() {
-    return (
-        <div>
-        <h1>Work Page</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-          ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-          non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-          ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-          rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-          tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-          porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-          vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus.
-        </p>
+  return (
+    <div>
+      <div className="row d-flex justify-content-center text-center">
+          <h1>Work Page</h1>
+          <p>Select one of my projects to view it's repository!</p>
       </div>
-    )
+      <div className="m-5 p-3">
+        <div className="row p-5 d-flex justify-content-around">
+          <div className="card" style={styles.card}>
+          <img src={teamCliScreenshot} className="card-img-top" alt="Team CLI" />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div className="card" style={styles.card}>
+          <img src={socialNetworkScreenshot} className="card-img-top" alt="Social Network API" />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row p-5 d-flex justify-content-around">
+          <div className="card" style={styles.card}>
+          <img src={artistInfoScreenshot} className="card-img-top" alt="Artist Info" />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div className="card" style={styles.card}>
+          <img src={eCommerceScreenshot} className="card-img-top" alt="E Commerce Interface" />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
