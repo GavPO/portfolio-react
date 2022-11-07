@@ -8,16 +8,16 @@ import Work from './Work';
 export default function NavContainer() {
     const [selectedNav, setSelectedNav] = useState('home');
     function renderEl() {
-        if (selectedNav === "home") {
+        if (selectedNav === 'home') {
             return <Home />
         }
-        if (selectedNav === "about") {
+        if (selectedNav === 'about') {
             return <About />
         }
-        if (selectedNav === "proj") {
+        if (selectedNav === 'proj') {
             return <Work />
         }
-        if (selectedNav === "contact") {
+        if (selectedNav === 'contact') {
             return <Contact />
         }
     };

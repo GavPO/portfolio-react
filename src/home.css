@@ -1,0 +1,19 @@
+#image-cropper {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#profile-pic {
+  display: inline-flex;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+  transform: rotate(-5deg);
+}
+#text-container {
+    padding-top: 100px;
+}
